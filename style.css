@@ -78,10 +78,10 @@ body{
     height: 100%;
 }
 
-.spring-container img {
+/* .spring-container img {
     display: none;
 
-}
+} */
 
 .spring-container h1 {
     font-family: "antiquarian-scribe", sans-serif;
@@ -123,9 +123,9 @@ body{
     body {
         background-color: rgb(224, 175, 209);
     }
-    .spring-container img {
+    /* .spring-container img {
         display: flex;
-    }
+    } */
     .spring-container h1 {
         display: flex;
     }
