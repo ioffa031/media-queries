@@ -1,0 +1,135 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+body{
+    background-color: rgb(174, 214, 178);
+}
+
+.media-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.summer-container, .fall-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.summer-container video, .fall-container video {
+    max-width: 80%;
+    max-height: 80vh;
+}
+
+.summer-container h1{
+    text-align: center;
+    font-family: beastly, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    color:rgb(9, 56, 12);
+
+}
+
+.fall-container video {
+    display: none
+}
+
+.fall-container h1{
+    text-align: center;
+    display: flex;
+    font-family: "joly-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(129, 72, 31);
+    font-size: 5vw;
+
+}
+
+.winter-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+}
+
+.winter-container-video{
+    display: none;
+
+}
+
+.winter-container h1{
+    font-family: "tuppence", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20vw;
+    text-align: center;
+}
+
+.spring-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.spring-container img {
+    display: none;
+
+}
+
+.spring-container h1 {
+    font-family: "antiquarian-scribe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 30vw;
+    display: none;
+    padding: 3rem;
+}
+
+
+@media screen and (max-width: 1020px){
+    body {
+        background-color: rgb(236, 215, 158);
+    }
+    .fall-container video {
+        display: flex;
+    }
+    .summer-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body {
+        background-color: rgb(196, 235, 236);
+    }
+    .winter-container video {
+        display: flex;
+    }
+    .fall-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body {
+        background-color: rgb(224, 175, 209);
+    }
+    .spring-container img {
+        display: flex;
+    }
+    .spring-container h1 {
+        display: flex;
+    }
+    .winter-container {
+        display: none;
+    }
+}
